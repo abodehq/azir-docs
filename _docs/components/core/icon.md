@@ -69,14 +69,14 @@ async function loadResourcesAsync() {
 
 > if you want to use your custom font icons, you need to do one extra step to map your fonts icons and inject them to our Dictionary . which is an easy step .
 
-- Create new javascript file ( for example beIcons.js)
+- Create new javascript file ( for example AzirIcons.js)
 
 - Export your icons object and make sure that you include in the first element : **\_fontFamily: "azir-font-icon"** the same name as you used in Font.loadAsync.
 
 - dont forget to add **\u** before each icon code. also icons name should be **camel case**.
 
 ```jsx
-export default BeIcons = {
+export default AzirIcons = {
   _fontFamily: "azir-font-icon",
   unHappy: "\uE802",
   wink: "\uE813",
@@ -112,12 +112,12 @@ import Icon, { SolidIcons, RegularIcons, BrandIcons } from "azir-icon";
 
 ```jsx
 import Icon from "azir-icon";
-import BeIcons from "./beIcons";//check above code of this object
+import AzirIcons from "./AzirIcons";//check above code of this object
 ---
-<Icon icon={BeIcons.unHappy} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={BeIcons.fireStation} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={BeIcons.sound} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={BeIcons.jabber} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={AzirIcons.unHappy} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={AzirIcons.fireStation} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={AzirIcons.sound} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={AzirIcons.jabber} style={ { padding: 15, fontSize: 30 } } />
 ```
 
 <img src="https://i.imgur.com/qoXCiT8.jpg" alt="Basic" style="width:150px" />

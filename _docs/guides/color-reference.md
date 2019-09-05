@@ -3,7 +3,7 @@ id: colors
 title: Color Reference
 ---
 
-### BlueEye Theme Colors
+### Azir Theme Colors
 
 You can use Theme Color names as a color value whenever a type _azir-color_ supported
 
