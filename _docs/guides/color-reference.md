@@ -5,7 +5,7 @@ title: Color Reference
 
 ### BlueEye Theme Colors
 
-You can use Theme Color names as a color value whenever a type _be-color_ supported
+You can use Theme Color names as a color value whenever a type _azir-color_ supported
 
 > COLORS reference table
 

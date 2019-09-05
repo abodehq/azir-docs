@@ -1,5 +1,5 @@
 ---
-title: Blue Eye Flash Message
+title: Azir Flash Message
 description:
 ---
 
@@ -13,16 +13,16 @@ An advance React Native module to help you with easily and highly customizable f
 
 ## Installation
 
-to install the latest version of `be-flash-message` you only need to run:
+to install the latest version of `azir-flash-message` you only need to run:
 
 ```bash
-npm install be-flash-message  --save
+npm install azir-flash-message  --save
 ```
 
 or
 
 ```bash
-yarn add be-flash-message
+yarn add azir-flash-message
 ```
 
 **Examples**
@@ -30,7 +30,7 @@ yarn add be-flash-message
 #### Basic
 
 ```jsx
-import Button from "be-button";
+import Button from "azir-button";
 ---
 <Button onPress={() => console.log("Button Pressed")}>
     Learn More
@@ -42,7 +42,7 @@ import Button from "be-button";
 #### Outline
 
 ```jsx
-import Button from "be-button";
+import Button from "azir-button";
 ---
 <Button outline onPress={() => console.log("Button Pressed")}>
     Learn More
@@ -54,7 +54,7 @@ import Button from "be-button";
 #### advance
 
 ```jsx
-import Button from "be-button";
+import Button from "azir-button";
 ---
  <Button
     color="error"
@@ -77,8 +77,8 @@ import Button from "be-button";
 #### With Icon
 
 ```jsx
-import Button from "be-button";
-import Icon, { RegularIcons } from "be-icon";
+import Button from "azir-button";
+import Icon, { RegularIcons } from "azir-icon";
 ---
 <Button
     icon={<Icon icon={RegularIcons.smileWink} style={ { paddingRight: 10 } } />}
@@ -98,7 +98,7 @@ import Icon, { RegularIcons } from "be-icon";
 #### loading
 
 ```jsx
-import Button from "be-button";
+import Button from "azir-button";
 ---
 <Button
     loading
@@ -118,7 +118,7 @@ import Button from "be-button";
 #### Custom Content
 
 ```jsx
-import Button from "be-button";
+import Button from "azir-button";
 import { Image } from "react-native";
 ---
 <Button
@@ -137,7 +137,7 @@ import { Image } from "react-native";
 #### TouchableHighlight
 
 ```jsx
-import Button from "be-button";
+import Button from "azir-button";
 import { Image } from "react-native";
 ---
 <Button
@@ -222,7 +222,7 @@ Background color of the button
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `textColor`
 
@@ -230,7 +230,7 @@ Text color of the button ( only if the children is string)
 
 | Type                                     | Required | Default                                        |
 | ---------------------------------------- | -------- | ---------------------------------------------- |
-| [be-color](../../guides/color-reference) | No       | white in default case, primary in outline mode |
+| [azir-color](../../guides/color-reference) | No       | white in default case, primary in outline mode |
 
 ### `textTransform`
 
@@ -254,7 +254,7 @@ border color of the button , will active if the borderWidth prop great than 0 or
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `borderWidth`
 
@@ -318,7 +318,7 @@ set Loading indicator color , will active if loading prop set to true
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `loadingSize`
 
@@ -334,7 +334,7 @@ Background color of the button when pressed , only if the button type is **Touch
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `underlayStyle`
 

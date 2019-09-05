@@ -1,5 +1,5 @@
 ---
-title: Blue Eye Radio
+title: Azir Radio
 description:
 ---
 
@@ -9,18 +9,18 @@ An advance Radio component that should render nicely on any platform. Supports a
 
 ## Installation
 
-to install the latest version of `be-radio` you only need to run:
+to install the latest version of `azir-radio` you only need to run:
 
 > this package incluse also : **(Radio, Switch, CheckBox, RadioGroup, CheckboxGroup )**
 
 ```bash
-npm install be-radio --save
+npm install azir-radio --save
 ```
 
 or
 
 ```bash
-yarn add be-radio
+yarn add azir-radio
 ```
 
 **Examples**
@@ -28,7 +28,7 @@ yarn add be-radio
 #### Basic
 
 ```jsx
-import { Radio } from "be-radio";
+import { Radio } from "azir-radio";
 ---
 <Radio
   id="1"
@@ -45,7 +45,7 @@ import { Radio } from "be-radio";
 #### Advance
 
 ```jsx
-import { Radio } from "be-radio";
+import { Radio } from "azir-radio";
 ---
 <Radio
   id="1"
@@ -85,8 +85,8 @@ import { Radio } from "be-radio";
 #### Custom Icons
 
 ```jsx
-import { Radio } from "be-radio";
-import  { SolidIcons } from "be-icon";
+import { Radio } from "azir-radio";
+import  { SolidIcons } from "azir-icon";
 ---
 <Radio
   id="1"
@@ -211,7 +211,7 @@ the text color of the component label when its checked .
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `textInActiveColor`
 
@@ -219,7 +219,7 @@ the text color of the component label when its unchecked .
 
 | Type                                     | Required | Default              |
 | ---------------------------------------- | -------- | -------------------- |
-| [be-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
+| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
 
 ### `textDisabledColor`
 
@@ -227,7 +227,7 @@ the text color of the component label when its disabled .
 
 | Type                                     | Required | Default              |
 | ---------------------------------------- | -------- | -------------------- |
-| [be-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
+| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
 
 ### `iconActive`
 
@@ -235,7 +235,7 @@ if you want to change the default icon of the radio button when its active, you 
 
 | Type                                                                      | Required | Default              |
 | ------------------------------------------------------------------------- | -------- | -------------------- |
-| [be-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | SolidIcons.dotCircle |
+| [azir-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | SolidIcons.dotCircle |
 
 ### `iconInActive`
 
@@ -243,7 +243,7 @@ if you want to change the default icon of the radio button when its inActive, yo
 
 | Type                                                                      | Required | Default              |
 | ------------------------------------------------------------------------- | -------- | -------------------- |
-| [be-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | SolidIcons.dotCircle |
+| [azir-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | SolidIcons.dotCircle |
 
 ### `iconActiveColor`
 
@@ -251,7 +251,7 @@ the color of the radio icon and its border when its checked .
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `iconInActiveColor`
 
@@ -259,7 +259,7 @@ the color of the radio icon and its border when its unchecked .
 
 | Type                                     | Required | Default              |
 | ---------------------------------------- | -------- | -------------------- |
-| [be-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
+| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
 
 ### `iconDisabledColor`
 
@@ -267,7 +267,7 @@ the color of the radio icon and its border when its disabled .
 
 | Type                                     | Required | Default              |
 | ---------------------------------------- | -------- | -------------------- |
-| [be-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
+| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
 
 ### `hideInActiveIcon`
 

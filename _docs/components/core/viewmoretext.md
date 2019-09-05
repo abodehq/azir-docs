@@ -1,5 +1,5 @@
 ---
-title: Blue Eye View More Text
+title: Azir View More Text
 description:
 ---
 
@@ -13,16 +13,16 @@ A super lightweight plugin to expand/collapse text in React-Native. Truncated te
 
 ## Installation
 
-to install the latest version of `be-view-more-text` you only need to run:
+to install the latest version of `azir-view-more-text` you only need to run:
 
 ```bash
-npm install be-view-more-text --save
+npm install azir-view-more-text --save
 ```
 
 or
 
 ```bash
-yarn add be-view-more-text
+yarn add azir-view-more-text
 ```
 
 **Examples**
@@ -30,7 +30,7 @@ yarn add be-view-more-text
 #### Basic
 
 ```jsx
-import ViewMore from "be-view-more-text";
+import ViewMore from "azir-view-more-text";
 ---
 <ViewMore selectable textStyle={ { width: 300 } } numberOfLines={1}>
   React Native lets you create truly native apps and doesn't compromise on your users' experience. It provides a core set of platform agnostic native components like View,
@@ -41,7 +41,7 @@ import ViewMore from "be-view-more-text";
 #### Advance
 
 ```jsx
-import ViewMore from "be-view-more-text";
+import ViewMore from "azir-view-more-text";
 ---
 <ViewMore viewLessStyle={ {color:"blue"} } viewMoreStyle={ {color:"#ff9900"} }
 viewLessText="مشاهدة القليل" viewMoreText="مشاهدة المزيد"
@@ -56,7 +56,7 @@ textStyle={ { width: 300, fontSize: 20, textAlign: "right" ,color:"green" } } nu
 #### Custom Footer
 
 ```jsx
-import ViewMore from "be-view-more-text";
+import ViewMore from "azir-view-more-text";
 ---
  <ViewMore
   renderRevealedFooter={onPress => {

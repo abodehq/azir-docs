@@ -1,5 +1,5 @@
 ---
-title: Blue Eye Radio Group
+title: Azir Radio Group
 description:
 ---
 
@@ -11,18 +11,18 @@ An advance component used to create a multiple-exclusion scope for a set of radi
 
 ## Installation
 
-to install the latest version of `be-radio` you only need to run:
+to install the latest version of `azir-radio` you only need to run:
 
 > this package incluse also : **(Radio, Switch, CheckBox, RadioGroup, CheckboxGroup )**
 
 ```bash
-npm install be-radio --save
+npm install azir-radio --save
 ```
 
 or
 
 ```bash
-yarn add be-radio
+yarn add azir-radio
 ```
 
 **Examples**
@@ -30,7 +30,7 @@ yarn add be-radio
 #### Basic
 
 ```jsx
-import { Radio, RadioGroup } from "be-radio";
+import { Radio, RadioGroup } from "azir-radio";
 ---
 <RadioGroup
   onChange={event => {

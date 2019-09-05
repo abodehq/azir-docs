@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blue Eye
+title: Azir
 permalink: /
 ---
 
