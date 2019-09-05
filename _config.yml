@@ -30,7 +30,7 @@ url: "https://github.com/abodehq/azir" # the base hostname & protocol for your s
 
 # Social (First three Required)
 repo: "https://github.com/abodehq/azir"
-doc_epo: "https://github.com/abodehq/azir"
+doc_epo: "https://github.com/abodehq/azir-docs"
 github_user: "abodehq"
 github_repo: "azir"
 
