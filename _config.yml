@@ -26,12 +26,13 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # /docsy-jekyll the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://abodehq.github.io/blue-eye" # the base hostname & protocol for your site
+url: "https://github.com/abodehq/azir" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/abodehq/blue-eye"
+repo: "https://github.com/abodehq/azir"
+doc_epo: "https://github.com/abodehq/azir"
 github_user: "abodehq"
-github_repo: "blue-eye"
+github_repo: "azir"
 
 # Optional
 twitter: snipercoder

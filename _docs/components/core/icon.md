@@ -25,7 +25,7 @@ A great component that give you the ability you to create your own custom icons 
 
 ## Installation
 
-to install the latest version of `azir-button` you only need to run:
+to install the latest version of `azir-icon` you only need to run:
 
 ```bash
 npm install azir-icon  --save
@@ -39,19 +39,31 @@ yarn add azir-icon
 
 ## Installation process
 
-Font Awesome Icons provide three types of free icons set . you can download which type you want or even you can download them all if you want ;) in addtion we have created custom icon font which you can download also.
+> Azir Theme using **[azir-font](https://drive.google.com/open?id=10f_C_DA3azuyF6myslkFQWF4jpxhFy5Z)** as a default font icons for all azir components Icons like **(Spinner,Radio, Switch, CheckBox, RadioGroup, CheckboxGroup )**, its required to load at least azir font into your app
+
+```jsx
+async function loadResourcesAsync() {
+  await Promise.all([
+    Font.loadAsync({
+      "azir-font": require("./assets/fonts/azir-font.ttf")
+    })
+  ]);
+}
+```
+
+Font Awesome Icons provide also three types of free icons set . you can download which type you want or even you can download them all if you want ;) in addtion You can create your own custom font..
 
 **Create Custom Font Icons**
 
 > you can use one of the online font icons generator like [Fontello](http://fontello.com/) which we are using in our custom font example.
 
-| Type         | Font Name(Required) | Download                                                                               |
-| ------------ | ------------------- | -------------------------------------------------------------------------------------- |
-| AzirIcons    | azir-font           | [azir-font](https://drive.google.com/open?id=10f_C_DA3azuyF6myslkFQWF4jpxhFy5Z)        |
-| RegularIcons | fa-regular-400      | [fa-regular-400](https://drive.google.com/open?id=1yq_sJ5le5S1S06msvaO6W16-9Oo7dXfa)   |
-| SolidIcons   | fa-solid-900        | [fa-solid-900](https://drive.google.com/open?id=18vQUn80hrR3lxTvB1toRE5Kf0pE37eif)     |
-| BrandIcons   | fa-brands-400       | [fa-brands-400](https://drive.google.com/open?id=1qJQ0t9ZchUaikh3TYeuIjGQgS3wrjxEW)    |
-| Custom Font  | custom-font-icon    | [custom-font-icon](https://drive.google.com/open?id=18reeFawb37lZrYh-yPNwqNW75ldhdSrc) |
+| Type                     | Font Name(Required) | Download                                                                               | Size   |
+| ------------------------ | ------------------- | -------------------------------------------------------------------------------------- | ------ |
+| AzirIcons (**REQUIRED**) | azir-font           | [azir-font](https://drive.google.com/open?id=10f_C_DA3azuyF6myslkFQWF4jpxhFy5Z)        | 12 KB  |
+| RegularIcons             | fa-regular-400      | [fa-regular-400](https://drive.google.com/open?id=1yq_sJ5le5S1S06msvaO6W16-9Oo7dXfa)   | 34 KB  |
+| SolidIcons               | fa-solid-900        | [fa-solid-900](https://drive.google.com/open?id=18vQUn80hrR3lxTvB1toRE5Kf0pE37eif)     | 188 KB |
+| BrandIcons               | fa-brands-400       | [fa-brands-400](https://drive.google.com/open?id=1qJQ0t9ZchUaikh3TYeuIjGQgS3wrjxEW)    | 127KB  |
+| Custom Font              | custom-font-icon    | [custom-font-icon](https://drive.google.com/open?id=18reeFawb37lZrYh-yPNwqNW75ldhdSrc) | 10 KB  |
 
 > next step is to load these fonts into your app , check below example if you are using expo .
 
@@ -59,6 +71,7 @@ Font Awesome Icons provide three types of free icons set . you can download whic
 async function loadResourcesAsync() {
   await Promise.all([
     Font.loadAsync({
+      "azir-font": require("./assets/fonts/azir-font.ttf"),
       "fa-solid-900": require("./assets/fonts/fa-solid-900.ttf"),
       "fa-regular-400": require("./assets/fonts/fa-solid-900.ttf"),
       "fa-brands-400": require("./assets/fonts/fa-brands-400.ttf"),
