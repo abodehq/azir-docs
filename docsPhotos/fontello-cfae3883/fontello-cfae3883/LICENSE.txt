@@ -6,8 +6,8 @@ Font license info
    Copyright (C) 2012 by Daniel Bruce
 
    Author:    Daniel Bruce
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://www.entypo.com
 
 
 ## Font Awesome
@@ -16,7 +16,7 @@ Font license info
 
    Author:    Dave Gandy
    License:   SIL ()
-   Homepage:  http://fortawesome.github.com/Font-Awesome/
+   Homepage:  https://fortawesome.github.com/Font-Awesome/
 
 
 ## Typicons
@@ -24,8 +24,8 @@ Font license info
    (c) Stephen Hutchings 2012
 
    Author:    Stephen Hutchings
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://typicons.com/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://typicons.com/
 
 
 ## Fontelico
@@ -33,7 +33,7 @@ Font license info
    Copyright (C) 2012 by Fontello project
 
    Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://fontello.com
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://fontello.com
 
 

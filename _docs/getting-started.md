@@ -41,7 +41,7 @@ but should not be included in search.
 If you have an external site with a search GET endpoint (meaning one that ends
 in `?q=<term>`, then you can automatically link page tags to search this endpoint.
 For example, on an HPC site I'd want a tag like "mpi" to do a search on 
-[http://ask.cyberinfrastructure.org](http://ask.cyberinfrastructure.org) for mpi.
+[https://ask.cyberinfrastructure.org](https://ask.cyberinfrastructure.org) for mpi.
 See the [tags](#tags) section below for how to configure this.
 
 ### Documentation
@@ -228,7 +228,7 @@ You can include block quotes to emphasize text.
 
 ## Development
 
-Initially (on OS X), you will need to setup [Brew](http://brew.sh/) which is a package manager for OS X and [Git](https://git-scm.com/). To install Brew and Git, run the following commands:
+Initially (on OS X), you will need to setup [Brew](https://brew.sh/) which is a package manager for OS X and [Git](https://git-scm.com/). To install Brew and Git, run the following commands:
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

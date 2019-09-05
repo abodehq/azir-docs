@@ -6,8 +6,8 @@ Font license info
    Copyright (C) 2012 by Sam Collins
 
    Author:    Sam Collins
-   License:   MIT (http://opensource.org/licenses/mit-license.php)
-   Homepage:  http://zocial.smcllns.com/
+   License:   MIT (https://opensource.org/licenses/mit-license.php)
+   Homepage:  https://zocial.smcllns.com/
 
 
 ## Fontelico
@@ -15,8 +15,8 @@ Font license info
    Copyright (C) 2012 by Fontello project
 
    Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://fontello.com
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://fontello.com
 
 
 ## Elusive
@@ -24,8 +24,8 @@ Font license info
    Copyright (C) 2013 by Aristeides Stathopoulos
 
    Author:    Aristeides Stathopoulos
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://aristeides.com/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://aristeides.com/
 
 
 ## Linecons
@@ -34,7 +34,7 @@ Font license info
 
    Author:    Designmodo for Smashing Magazine
    License:   CC BY ()
-   Homepage:  http://designmodo.com/linecons-free/
+   Homepage:  https://designmodo.com/linecons-free/
 
 
 ## Font Awesome
@@ -43,7 +43,7 @@ Font license info
 
    Author:    Dave Gandy
    License:   SIL ()
-   Homepage:  http://fortawesome.github.com/Font-Awesome/
+   Homepage:  https://fortawesome.github.com/Font-Awesome/
 
 
 ## Typicons
@@ -51,8 +51,8 @@ Font license info
    (c) Stephen Hutchings 2012
 
    Author:    Stephen Hutchings
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://typicons.com/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://typicons.com/
 
 
 ## Web Symbols
@@ -60,8 +60,8 @@ Font license info
    Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
 
    Author:    Just Be Nice studio
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://www.justbenicestudio.com/
 
 
 ## Entypo
@@ -69,8 +69,8 @@ Font license info
    Copyright (C) 2012 by Daniel Bruce
 
    Author:    Daniel Bruce
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://www.entypo.com
 
 
 ## Iconic
@@ -78,8 +78,8 @@ Font license info
    Copyright (C) 2012 by P.J. Onori
 
    Author:    P.J. Onori
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://somerandomdude.com/work/iconic/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://somerandomdude.com/work/iconic/
 
 
 ## Maki
@@ -88,7 +88,7 @@ Font license info
 
    Author:    Mapbox
    License:   BSD (https://github.com/mapbox/maki/blob/gh-pages/LICENSE.txt)
-   Homepage:  http://mapbox.com/maki/
+   Homepage:  https://mapbox.com/maki/
 
 
 ## Modern Pictograms
@@ -96,8 +96,8 @@ Font license info
    Copyright (c) 2012 by John Caserta. All rights reserved.
 
    Author:    John Caserta
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://thedesignoffice.org/project/modern-pictograms/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://thedesignoffice.org/project/modern-pictograms/
 
 
 ## MFG Labs
@@ -105,8 +105,8 @@ Font license info
    Copyright (C) 2012 by Daniel Bruce
 
    Author:    MFG Labs
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.mfglabs.com/
+   License:   SIL (https://scripts.sil.org/OFL)
+   Homepage:  https://www.mfglabs.com/
 
 
 ## Brandico
@@ -114,7 +114,7 @@ Font license info
    (C) 2012 by Vitaly Puzrin
 
    Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
+   License:   SIL (https://scripts.sil.org/OFL)
    Homepage:  
 
 

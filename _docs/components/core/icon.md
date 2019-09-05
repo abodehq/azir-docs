@@ -5,7 +5,7 @@ description:
 
 # Icon
 
-A great component that give you the ability you to create your own custom icons or fontawsome icons .
+A great component that give you the ability you to create your own custom icons .
 
 > We give you a tool to generate and search for fontawsome icons directly. [Icons List](../../guides/fontawesomelist)
 
@@ -55,7 +55,7 @@ Font Awesome Icons provide also three types of free icons set . you can download
 
 **Create Custom Font Icons**
 
-> you can use one of the online font icons generator like [Fontello](http://fontello.com/) which we are using in our custom font example.
+> you can use one of the online font icons generator like [Fontello](https://fontello.com/) which we are using in our custom font example.
 
 | Type                     | Font Name(Required) | Download                                                                               | Size   |
 | ------------------------ | ------------------- | -------------------------------------------------------------------------------------- | ------ |
