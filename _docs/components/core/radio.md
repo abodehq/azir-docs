@@ -209,64 +209,64 @@ Hide Radio label when it set to true . or you simply not pass text children to t
 
 the text color of the component label when its checked .
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
 | [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `textInActiveColor`
 
 the text color of the component label when its unchecked .
 
-| Type                                     | Required | Default              |
-| ---------------------------------------- | -------- | -------------------- |
+| Type                                       | Required | Default              |
+| ------------------------------------------ | -------- | -------------------- |
 | [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
 
 ### `textDisabledColor`
 
 the text color of the component label when its disabled .
 
-| Type                                     | Required | Default              |
-| ---------------------------------------- | -------- | -------------------- |
+| Type                                       | Required | Default              |
+| ------------------------------------------ | -------- | -------------------- |
 | [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
 
 ### `iconActive`
 
 if you want to change the default icon of the radio button when its active, you need just to pass the new icon name using this prop.
 
-| Type                                                                      | Required | Default              |
-| ------------------------------------------------------------------------- | -------- | -------------------- |
-| [azir-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | SolidIcons.dotCircle |
+| Type                                                                        | Required | Default                              |
+| --------------------------------------------------------------------------- | -------- | ------------------------------------ |
+| [azir-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | AzirTheme.STRINGS.RADIO_DEFAULT_ICON |
 
 ### `iconInActive`
 
 if you want to change the default icon of the radio button when its inActive, you need just to pass the new icon name using this prop.
 
-| Type                                                                      | Required | Default              |
-| ------------------------------------------------------------------------- | -------- | -------------------- |
-| [azir-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | SolidIcons.dotCircle |
+| Type                                                                        | Required | Default                              |
+| --------------------------------------------------------------------------- | -------- | ------------------------------------ |
+| [azir-icon (SolidIcons, RegularIcons, BrandIcons,customIcons)](icon#icon-1) | No       | AzirTheme.STRINGS.RADIO_DEFAULT_ICON |
 
 ### `iconActiveColor`
 
 the color of the radio icon and its border when its checked .
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
 | [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `iconInActiveColor`
 
 the color of the radio icon and its border when its unchecked .
 
-| Type                                     | Required | Default              |
-| ---------------------------------------- | -------- | -------------------- |
+| Type                                       | Required | Default              |
+| ------------------------------------------ | -------- | -------------------- |
 | [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
 
 ### `iconDisabledColor`
 
 the color of the radio icon and its border when its disabled .
 
-| Type                                     | Required | Default              |
-| ---------------------------------------- | -------- | -------------------- |
+| Type                                       | Required | Default              |
+| ------------------------------------------ | -------- | -------------------- |
 | [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
 
 ### `hideInActiveIcon`

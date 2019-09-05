@@ -45,12 +45,13 @@ Font Awesome Icons provide three types of free icons set . you can download whic
 
 > you can use one of the online font icons generator like [Fontello](http://fontello.com/) which we are using in our custom font example.
 
-| Type         | Font Name(Required) | Download                                                                             |
-| ------------ | ------------------- | ------------------------------------------------------------------------------------ |
-| RegularIcons | fa-regular-400      | [fa-regular-400](https://drive.google.com/open?id=1yq_sJ5le5S1S06msvaO6W16-9Oo7dXfa) |
-| SolidIcons   | fa-solid-900        | [fa-solid-900](https://drive.google.com/open?id=18vQUn80hrR3lxTvB1toRE5Kf0pE37eif)   |
-| BrandIcons   | fa-brands-400       | [fa-brands-400](https://drive.google.com/open?id=1qJQ0t9ZchUaikh3TYeuIjGQgS3wrjxEW)  |
-| Custom Font  | azir-font-icon        | [azir-font-icon](https://drive.google.com/open?id=18reeFawb37lZrYh-yPNwqNW75ldhdSrc)   |
+| Type         | Font Name(Required) | Download                                                                               |
+| ------------ | ------------------- | -------------------------------------------------------------------------------------- |
+| AzirIcons    | azir-font           | [azir-font](https://drive.google.com/open?id=10f_C_DA3azuyF6myslkFQWF4jpxhFy5Z)        |
+| RegularIcons | fa-regular-400      | [fa-regular-400](https://drive.google.com/open?id=1yq_sJ5le5S1S06msvaO6W16-9Oo7dXfa)   |
+| SolidIcons   | fa-solid-900        | [fa-solid-900](https://drive.google.com/open?id=18vQUn80hrR3lxTvB1toRE5Kf0pE37eif)     |
+| BrandIcons   | fa-brands-400       | [fa-brands-400](https://drive.google.com/open?id=1qJQ0t9ZchUaikh3TYeuIjGQgS3wrjxEW)    |
+| Custom Font  | custom-font-icon    | [custom-font-icon](https://drive.google.com/open?id=18reeFawb37lZrYh-yPNwqNW75ldhdSrc) |
 
 > next step is to load these fonts into your app , check below example if you are using expo .
 
@@ -61,7 +62,7 @@ async function loadResourcesAsync() {
       "fa-solid-900": require("./assets/fonts/fa-solid-900.ttf"),
       "fa-regular-400": require("./assets/fonts/fa-solid-900.ttf"),
       "fa-brands-400": require("./assets/fonts/fa-brands-400.ttf"),
-      "azir-font-icon": require("./assets/fonts/azir-font-icon.ttf") // if you want to use Custom font. you can change the name of the font and the file as you want ( only for custom font icon)
+      "custom-font-icon": require("./assets/fonts/custom-font-icon.ttf") // if you want to use Custom font. you can change the name of the font and the file as you want ( only for custom font icon)
     })
   ]);
 }
@@ -69,15 +70,15 @@ async function loadResourcesAsync() {
 
 > if you want to use your custom font icons, you need to do one extra step to map your fonts icons and inject them to our Dictionary . which is an easy step .
 
-- Create new javascript file ( for example AzirIcons.js)
+- Create new javascript file ( for example CustomIcons.js)
 
-- Export your icons object and make sure that you include in the first element : **\_fontFamily: "azir-font-icon"** the same name as you used in Font.loadAsync.
+- Export your icons object and make sure that you include in the first element : **\_fontFamily: "custom-font-icon"** the same name as you used in Font.loadAsync.
 
 - dont forget to add **\u** before each icon code. also icons name should be **camel case**.
 
 ```jsx
-export default AzirIcons = {
-  _fontFamily: "azir-font-icon",
+export default CustomIcons = {
+  _fontFamily: "custom-font-icon",
   unHappy: "\uE802",
   wink: "\uE813",
   fireStation: "\uE817",
@@ -112,12 +113,12 @@ import Icon, { SolidIcons, RegularIcons, BrandIcons } from "azir-icon";
 
 ```jsx
 import Icon from "azir-icon";
-import AzirIcons from "./AzirIcons";//check above code of this object
+import CustomIcons from "./CustomIcons";//check above code of this object
 ---
-<Icon icon={AzirIcons.unHappy} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={AzirIcons.fireStation} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={AzirIcons.sound} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={AzirIcons.jabber} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={CustomIcons.unHappy} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={CustomIcons.fireStation} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={CustomIcons.sound} style={ { padding: 15, fontSize: 30 } } />
+<Icon icon={CustomIcons.jabber} style={ { padding: 15, fontSize: 30 } } />
 ```
 
 <img src="https://i.imgur.com/qoXCiT8.jpg" alt="Basic" style="width:150px" />
@@ -146,8 +147,8 @@ set the Icon using one of the fontawsome free icons set.
 
 color of the Icon
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
 | [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `size`
