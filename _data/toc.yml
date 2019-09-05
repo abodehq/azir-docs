@@ -1,0 +1,44 @@
+- title: Documentation
+  url: docs
+  links:
+    # - title: "Getting Started"
+    #   url: "docs/getting-started"
+    #   children:
+    #     - title: Features
+    #       url: "docs/getting-started#getting-started"
+    #     - title: Development
+    #       url: "docs/getting-started#development"
+    #     - title: Customization
+    #       url: "docs/getting-started#customization"
+    - title: "Core Components"
+      url: "docs/components/core/button"
+      children:
+        - title: Icon
+          url: "docs/components/core/icon"
+        - title: Button
+          url: "docs/components/core/button"
+        - title: Radio
+          url: "docs/components/core/radio"
+        - title: Radio Group
+          url: "docs/components/core/radiogroup"
+        - title: CheckBox
+          url: "docs/components/core/checkbox"
+        - title: CheckBox Group
+          url: "docs/components/core/checkboxgroup"
+        - title: Flash Message
+          url: "docs/components/core/flashmessage"
+        - title: View More Text
+          url: "docs/components/core/viewmoretext"
+        # - title: Quizzes1
+        # url: "docs/extras/example-quiz"
+    - title: "GUIDES"
+      url: "docs/guides/color-reference"
+      children:
+        - title: Color Reference
+          url: "docs/guides/color-reference"
+        - title: Icons List
+          url: "docs/guides/fontawesomelist"
+    # - title: "About"
+    #   url: "about"
+    # - title: "News"
+    #   url: "news"
