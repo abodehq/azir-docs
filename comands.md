@@ -26,7 +26,7 @@ git checkout -b gh-pages
 git add .
 git commit -m "test init pages"
 git remote rm origin
-git remote add origin https://github.com/abodehq/blue-eye-docs.git
+git remote add origin https://github.com/abodehq/azir-docs.git
 git remote -v
 git push origin gh-pages
 
