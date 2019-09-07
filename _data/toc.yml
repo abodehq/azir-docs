@@ -15,6 +15,10 @@
       children:
         - title: Icon
           url: "docs/components/core/icon"
+        - title: Text
+          url: "docs/components/core/text"
+        - title: Text Typography
+          url: "docs/components/core/texttypography"
         - title: Button
           url: "docs/components/core/button"
         - title: Radio
