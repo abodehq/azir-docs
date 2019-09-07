@@ -5,15 +5,17 @@ description:
 
 # Text Typography
 
-An advance Text component for displaying text. Azir Text supports nesting, styling, and touch handling.
+Pixel–perfect, native–looking typographic styles for React Native.
 
-> we have also add Pixel–perfect, native–looking typographic styles for React Native.
+> This library provides a good set of defaults and helpers that cover the majority of the cases you'll need.
 
 <p align="center">
  <img src="https://i.imgur.com/jUQLsA2.jpg" />
 </p>
 
 ## Installation
+
+> this library is part of azir text package
 
 to install the latest version of `azir-text` you only need to run:
 
@@ -27,104 +29,112 @@ or
 yarn add azir-text
 ```
 
-> We provide a series of predefined collections for you to start with that match the native design systems for iOS and Android. You can use them directly wherever you would supply a textStyle.
-
 **Examples**
 
 #### Example
 
 ```jsx
-import Text from "azir-text";
+import Text, {material} from "azir-text";
 ---
-<Text
-    h1
-    italic
-    bold
-    center
-    color="error"
-    style={ { textDecorationLine: "underline" } }
-    onPress={() => {
-        console.log("Text Pressed");
-    }}
-    >
-    I am bold & <Text color="success">Green</Text>
+<Text style={[material.display2, { textDecorationLine: "underline" }]} italic color="error">
+    Hello Material ❤️️ !
+</Text>
+<Text style={[material.display1, { textDecorationLine: "underline" }]} italic color="success">
+    Hello Material 💚 !
+</Text>
+<Text style={[material.title, { textDecorationLine: "underline" }]} italic color="info">
+    Hello Material 💙 !
 </Text>
 ```
 
-<img src="https://i.imgur.com/yqJZHzb.jpg" alt="Basic" style="width:250px" />
+<img src="https://i.imgur.com/V69Xmm4.jpg" alt="Basic" style="width:250px" />
 
-### Props
+# **Typography collections**
 
-- [`color`](text#color)
-- [`bold`](text#bold)
-- [`italic`](text#italic)
-- [`center`](text#center)
-- [`size`](text#size)
-- [`style`](text#style)
+> All Typography can used directly wherever you would supply a textStyle.
 
----
+### `Human Interface`
 
-# Reference
+> **Dense and tall scripts are fully supported.**
 
-### `color`
+```bash
+import Text,{ human,humanDense,humanTall } from 'azir-text'
 
-Text Color
+<Text style={human.largeTitle}>Hello !</Text>
+<Text style={humanDense.largeTitle}>Hello !</Text>
+<Text style={humanTall.largeTitle}>Hello !</Text>
+```
 
-| Type                                       | Required | Default |
-| ------------------------------------------ | -------- | ------- |
-| [azir-color](../../guides/color-reference) | No       | theme   |
+<img src="https://i.imgur.com/gKtG7Lg.jpg" alt="Human" style="width:300px" />
 
-### `Azir Text Sizes`
+| style name | Size          |
+| ---------- | ------------- |
+| largeTitle | 34            |
+| title1     | 28            |
+| title2     | 22            |
+| title3     | 20            |
+| headline   | semi-bold, 17 |
+| body       | 17            |
+| callout    | 16            |
+| subhead    | 15            |
+| footnote   | 13            |
+| caption1   | 12            |
+| caption2   | 11            |
 
-> you can pass any of these text sizes props., typography styles have more priority than these props.
+### `Material Design`
 
-| Prop | type    | Default                           |
-| ---- | ------- | --------------------------------- |
-| h1   | boolean | Sets the text's fontSize to 44px. |
-| h2   | boolean | Sets the text's fontSize to 38px. |
-| h3   | boolean | Sets the text's fontSize to 30px. |
-| h4   | boolean | Sets the text's fontSize to 24px. |
-| h5   | boolean | Sets the text's fontSize to 18px. |
-| p    | boolean | Sets the text's fontSize to 16px. |
+> **Dense and tall scripts are fully supported.**
 
-### `bold`
+```bash
+import Text,{ material,materialDense,materialTall } from 'azir-text'
 
-add bold to text font style , typography styles have more priority than this prop.
+<Text style={material.display4}>Hello !</Text>
+<Text style={materialDense.display4}>Hello !</Text>
+<Text style={materialTall.display4}>Hello !</Text>
+```
 
-| Type    | Required | Default |
-| ------- | -------- | ------- |
-| boolean | No       | false   |
+<img src="https://i.imgur.com/C2VWPOF.jpg" alt="material" style="width:300px" />
 
-### `italic`
+| style name | Size      |
+| ---------- | --------- |
+| display4   | light,112 |
+| display3   | 56        |
+| display2   | 45        |
+| display1   | 34        |
+| headline   | 24        |
+| title      | medium,20 |
+| subheading | 16        |
+| body2      | medium,14 |
+| body1      | 14        |
+| caption    | 12        |
+| button     | medium 14 |
 
-add italic to text font style .
+### `iOSUIKit`
 
-| Type    | Required | Default |
-| ------- | -------- | ------- |
-| boolean | No       | false   |
+> **Dense and tall scripts are fully supported.**
 
-### `center`
+```bash
+import Text,{ iOSUIKit,iOSUIKitDense,iOSUIKitTall } from 'azir-text'
 
-align text to center .
+<Text style={iOSUIKit.largeTitle}>Hello !</Text>
+<Text style={iOSUIKitDense.largeTitle}>Hello !</Text>
+<Text style={iOSUIKitTall.largeTitle}>Hello !</Text>
+```
 
-| Type    | Required | Default |
-| ------- | -------- | ------- |
-| boolean | No       | false   |
+<img src="https://i.imgur.com/C2VWPOF.jpg" alt="iOSUIKit" style="width:300px" />
 
-### `size`
-
-override text size Size, this will ovveride any premade font sizes like h1,h2 or even typography font size.
-
-| Type   | Required | Default |
-| ------ | -------- | ------- |
-| number | No       | Not set |
-
-### `style`
-
-override text style for example if you want to change fontSize,textDecorationLine,...
-
-| Type  | Required |
-| ----- | -------- |
-| style | No       |
-
-> **You Still can pass any of react native Text Props**
+| style name           | Size         |
+| -------------------- | ------------ |
+| largeTitleEmphasized | Bold,34      |
+| title3Emphasized     | semi-bold,20 |
+| title3               | 20           |
+| bodyEmphasized       | semi-bold,17 |
+| body                 | 17           |
+| subheadEmphasized    | semi-bold,15 |
+| subhead              | 15           |
+| subheadShort         | short,15     |
+| callout              | 16           |
+| footnoteEmphasized   | semi-bold,13 |
+| footnote             | 13           |
+| caption2Emphasized   | semi-bold,11 |
+| caption2             | 11           |
