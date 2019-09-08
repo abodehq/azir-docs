@@ -77,7 +77,7 @@ import  { AzirIcons } from "azir-icon";
 </Switch>
 ```
 
-<img src="https://i.imgur.com/ueOYuk2.jpg" alt="Basic" style="width:150px" />
+<img src="https://i.imgur.com/ueOYuk2.jpg" alt="with icon" style="width:250px" />
 
 ### Props
 
