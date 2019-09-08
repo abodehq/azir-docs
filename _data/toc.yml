@@ -1,17 +1,13 @@
-- title: Documentation
+- title: Azir Framwork
   url: docs
   links:
-    # - title: "Getting Started"
-    #   url: "docs/getting-started"
-    #   children:
-    #     - title: Features
-    #       url: "docs/getting-started#getting-started"
-    #     - title: Development
-    #       url: "docs/getting-started#development"
-    #     - title: Customization
-    #       url: "docs/getting-started#customization"
-    - title: "Core Components"
-      url: "docs/components/core/button"
+    - title: "Get Started"
+      url: "docs/guides/color-reference"
+      children:
+        - title: Azir Theme
+          url: "docs/components/core/theme"
+    - title: "Components"
+      url: "#"
       children:
         - title: Icon
           url: "docs/components/core/icon"
@@ -38,13 +34,9 @@
         # - title: Quizzes1
         # url: "docs/extras/example-quiz"
     - title: "GUIDES"
-      url: "docs/guides/color-reference"
+      url: "#"
       children:
         - title: Color Reference
           url: "docs/guides/color-reference"
         - title: Icons List
           url: "docs/guides/fontawesomelist"
-    # - title: "About"
-    #   url: "about"
-    # - title: "News"
-    #   url: "news"
