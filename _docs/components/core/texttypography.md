@@ -53,6 +53,10 @@ import Text, {material} from "azir-text";
 
 > All Typography can used directly wherever you would supply a textStyle.
 
+> **Tall typefaces** : Language scripts that require extra line height to accommodate larger glyphs, including South and Southeast Asian and Middle-Eastern languages, like Arabic, Hindi, Telugu, Thai, and Vietnamese.
+
+> **Dense typefaces** : Language scripts that require extra line height to accommodate larger glyphs, including Chinese, Japanese, and Korean.
+
 ### `Human Interface`
 
 > **Dense and tall scripts are fully supported.**
@@ -138,3 +142,23 @@ import Text,{ iOSUIKit,iOSUIKitDense,iOSUIKitTall } from 'azir-text'
 | footnote             | 13           |
 | caption2Emphasized   | semi-bold,11 |
 | caption2             | 11           |
+
+---
+
+# Weights
+
+> A font weight in React Native is sometimes formed by a pair of a fontFamily and a fontWeight, but not always! It depends on the typeface, sometimes it's just defined by the fontFamily.With these helpers, you don't have to worry about those inconsistencies.
+
+```bash
+import Text,{ systemWeights,material } from 'azir-text'
+
+<Text style={[material.title, systemWeights.light]}>Title</Text>
+```
+
+| weight name |
+| ----------- |
+| thin        |
+| light       |
+| regular     |
+| semibold    |
+| bold        |
