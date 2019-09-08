@@ -59,7 +59,7 @@ import  { AzirIcons } from "azir-icon";
   hideInActiveIcon={false}
   checked
 >
-  Custom Switch
+  Custom Switch !
 </Switch>
 
 <Switch
@@ -73,7 +73,7 @@ import  { AzirIcons } from "azir-icon";
   hideInActiveIcon={false}
   checked
 >
-  Custom Switch
+  Custom Switch !
 </Switch>
 ```
 
