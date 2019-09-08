@@ -193,9 +193,9 @@ flexDirection controls which directions children of a container go.(checkBox ico
 
 set the size of the icon .
 
-| Type   | Required | Default                 |
-| ------ | -------- | ----------------------- |
-| Number | No       | BETheme.SIZES.ICON_SIZE |
+| Type   | Required | Default                  |
+| ------ | -------- | ------------------------ |
+| Number | No       | BETheme.SIZES.RADIO_SIZE |
 
 ### `hideLable`
 

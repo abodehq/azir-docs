@@ -29,6 +29,8 @@
           url: "docs/components/core/checkbox"
         - title: CheckBox Group
           url: "docs/components/core/checkboxgroup"
+        - title: Switch
+          url: "docs/components/core/switch"
         - title: Flash Message
           url: "docs/components/core/flashmessage"
         - title: View More Text
