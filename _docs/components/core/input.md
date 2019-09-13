@@ -160,6 +160,7 @@ import Icon, {SolidIcons} from "azir-icon";
 - [`help`](input#help)
 - [`helpPosition`](input#helpposition)
 - [`helpStyle`](input#helpstyle)
+- [`containerStyle`](input#containerstyle)
 
 ---
 
@@ -304,6 +305,14 @@ Sets the help Position
 ### `helpStyle`
 
 override help Style
+
+| Type  | Required |
+| ----- | -------- |
+| style | No       |
+
+### `containerStyle`
+
+override input container Style which include ( input text + icon)
 
 | Type  | Required |
 | ----- | -------- |
