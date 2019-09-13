@@ -195,7 +195,7 @@ set the size of the icon .
 
 | Type   | Required | Default                  |
 | ------ | -------- | ------------------------ |
-| Number | No       | BETheme.SIZES.RADIO_SIZE |
+| Number | No       | AzirTheme.SIZES.RADIO_SIZE |
 
 ### `hideLable`
 
@@ -219,7 +219,7 @@ the text color of the component label when its unchecked .
 
 | Type                                       | Required | Default              |
 | ------------------------------------------ | -------- | -------------------- |
-| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
+| [azir-color](../../guides/color-reference) | No       | AzirTheme.COLORS.BLACK |
 
 ### `textDisabledColor`
 
@@ -227,7 +227,7 @@ the text color of the component label when its disabled .
 
 | Type                                       | Required | Default              |
 | ------------------------------------------ | -------- | -------------------- |
-| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
+| [azir-color](../../guides/color-reference) | No       | AzirTheme.COLORS.MUTED |
 
 ### `iconActive`
 
@@ -259,7 +259,7 @@ the color of the checkBox icon and its border when its unchecked .
 
 | Type                                       | Required | Default              |
 | ------------------------------------------ | -------- | -------------------- |
-| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.BLACK |
+| [azir-color](../../guides/color-reference) | No       | AzirTheme.COLORS.BLACK |
 
 ### `iconDisabledColor`
 
@@ -267,7 +267,7 @@ the color of the checkBox icon and its border when its disabled .
 
 | Type                                       | Required | Default              |
 | ------------------------------------------ | -------- | -------------------- |
-| [azir-color](../../guides/color-reference) | No       | BETheme.COLORS.MUTED |
+| [azir-color](../../guides/color-reference) | No       | AzirTheme.COLORS.MUTED |
 
 ### `hideInActiveIcon`
 

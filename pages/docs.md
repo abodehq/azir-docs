@@ -23,7 +23,9 @@ permalink: /docs/
     <p align="center">The Idea Behind Azir Framework is to Collect and Refactor popular react native open source modules in One Place Under One theme and also to avoid multiple dependencies and out of dated packages.  </p>
 </p>
 
-## Azir Origion Packages
+> Azir core build using Galio Structure which will help us to unit all azir components under one theme .
+
+## Best Thanks to these Packages
 
 - [Galio KIT](https://github.com/galio-org/galio)
 - [react-native-typography](https://github.com/hectahertz/react-native-typography#readme)
@@ -40,41 +42,15 @@ permalink: /docs/
 - [Reporting Issues](#reporting-issues)
 - [Licensing](#licensing)
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://raw.githubusercontent.com/galio-org/galio-org.github.io/master/img/readme3.jpg">
   <img src="https://i.imgur.com/8kcSRNl.png">
   <img src="https://i.imgur.com/KLM1Zbw.png">
-</p>
+</p> -->
 
 ## Quick Start
 
-#### 1. Project Setup
-
-Go ahead and install the app version of Galio in order to play around with our components and screens!
-
-```bash
-git clone https://github.com/galio-org/galio.git
-cd galio
-git checkout examples
-npm install or yarn install
-```
-
-#### 2. Project testing
-
-Terminal cli: `expo start`
-
-After initializing your local server you are now able to test the app inside your simulator by running:
-`npm run ios` or
-`yarn run ios`
-(or try an Android simulator)
-
-Use our iOS or Android app directly on your physical device by running it inside Expo!
-
-[Expo iOS app](https://itunes.apple.com/us/app/expo-client/id982107779?mt=8)
-
-[Expo Android app](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en)
-
-#### 3. SDK library instructions
+#### SDK library instructions
 
 Use our awesome components inside your own projects by running:
 
@@ -96,20 +72,18 @@ import { Block, Button, Card, Icon, Input, NavBar, Text } from "galio-framework"
 
 ## Components
 
-Under Galio's belt:
-
-- Block
-- Button
-- Card
-- Checkbox
+- Azir Theme
 - Icon
-- Input
-- NavBar
-- Radio
-- Slider
+- Button
 - Text
+- Text Typography
+- Radio
+- Radio Group
+- Checkbox
+- Checkbox Group
 - Switch
-- GalioTheme
+- View More Text
+- Flash Message
 
 ## Documentation
 
@@ -121,13 +95,13 @@ The documentation for azir is hosted at our [our website](https://azir.io/docs)
 - Expo: [expo.io](https://expo.io?ref=azir-repo)
 - Issues: [GitHub Issues Page](https://github.com/abodehq/azir/issues)
 
-## Reporting Issues
+<!-- ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for Galio. Here are some advices for our users that want to report an issue:
 
 1. Make sure that you are using the latest version of Galio. Check for your fork's master branch status and see if it's up to date with the upstream/master (our repository)
 2. Provide us with reproductible steps for the issue.
-3. Some issues may be platform specific, so specifying what platform and if it's a simulator or a hardware device will help a lot.
+3. Some issues may be platform specific, so specifying what platform and if it's a simulator or a hardware device will help a lot. -->
 
 <!-- ## Contributors
 

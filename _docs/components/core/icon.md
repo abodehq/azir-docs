@@ -170,7 +170,7 @@ set the size of the icon , you can instead of using the size prop, you just over
 
 | Type   | Required | Default                 |
 | ------ | -------- | ----------------------- |
-| Number | No       | BETheme.SIZES.ICON_SIZE |
+| Number | No       | AzirTheme.SIZES.ICON_SIZE |
 
 ### `shadow`
 

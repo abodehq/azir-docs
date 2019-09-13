@@ -1,189 +1,139 @@
 ---
-title: Azir Icon
+title: Azir Theme
 description:
 ---
 
-# Icon
+# AzirTheme usage
 
-A great component that give you the ability you to create your own custom icons .
+All the colors, sizes and layout rules are stored in our default theme. This can be found in the `theme` folder inside our library. Every component inherits its styling rules from that file. Imagine this... You're building an application and you have 30 buttons using the primary color but you feel like that color doesn't really suit your project. You can re-write our theme file with only the things you want to change by using our theme components and all Azir components will change the that certain style.
 
-> We give you a tool to generate and search for fontawsome icons directly. [Icons List](../../guides/fontawesomelist)
+### 1. Components
 
-# Benefits
+- **AzirTheme**: default theme for components exporting an object with `{ COLORS, SIZES }`
+- **withAzir**: HoC for any React-Native component with args: `Component` and optional `styles`. By using this, you can access constants we have in our default theme.
+- **AzirProvider**: React Context Provider getting **custom theme** from props and pass it to the React Context.
 
-- Create you own custome icons which you can control the size of the font icon file.
+### 2. Usage
 
-- No bloatware, one package with one iconset, nothing more nothing less
+- install the latest **Azir-framework** using `npm install Azir-framework` or `yarn add Azir-framework`
+- import { **theme, withAzir, AzirProvider** } from 'Azir-framework'
+- export default **withAzir(YourComponent, componentStyles)**;
+- custom theme constants will **overwrite** the default Azir theme constants
 
-- Full set of FontAwesome Icons properly updated
-
-- Insanely fast with minimal memory footprint
-
-<p align="center">
- <img src="https://i.imgur.com/GYK34HW.png" />
-</p>
-
-## Installation
-
-to install the latest version of `azir-icon` you only need to run:
-
-```bash
-npm install azir-icon  --save
-```
-
-or
-
-```bash
-yarn add azir-icon
-```
-
-## Installation process
-
-> Azir Theme using **[azir-font](https://drive.google.com/open?id=10f_C_DA3azuyF6myslkFQWF4jpxhFy5Z)** as a default font icons for all azir components Icons like **(Spinner,Radio, Switch, CheckBox, RadioGroup, CheckboxGroup )**, its required to load at least azir font into your app
-
-```jsx
-async function loadResourcesAsync() {
-  await Promise.all([
-    Font.loadAsync({
-      "azir-font": require("./assets/fonts/azir-font.ttf")
-    })
-  ]);
-}
-```
-
-Font Awesome Icons provide also three types of free icons set . you can download which type you want or even you can download them all if you want ;) in addtion You can create your own custom font..
-
-**Create Custom Font Icons**
-
-> you can use one of the online font icons generator like [Fontello](https://fontello.com/) which we are using in our custom font example.
-
-| Type                     | Font Name(Required) | Download                                                                               | Size   |
-| ------------------------ | ------------------- | -------------------------------------------------------------------------------------- | ------ |
-| AzirIcons (**REQUIRED**) | azir-font           | [azir-font](https://drive.google.com/open?id=10f_C_DA3azuyF6myslkFQWF4jpxhFy5Z)        | 12 KB  |
-| RegularIcons             | fa-regular-400      | [fa-regular-400](https://drive.google.com/open?id=1yq_sJ5le5S1S06msvaO6W16-9Oo7dXfa)   | 34 KB  |
-| SolidIcons               | fa-solid-900        | [fa-solid-900](https://drive.google.com/open?id=18vQUn80hrR3lxTvB1toRE5Kf0pE37eif)     | 188 KB |
-| BrandIcons               | fa-brands-400       | [fa-brands-400](https://drive.google.com/open?id=1qJQ0t9ZchUaikh3TYeuIjGQgS3wrjxEW)    | 127KB  |
-| Custom Font              | custom-font-icon    | [custom-font-icon](https://drive.google.com/open?id=18reeFawb37lZrYh-yPNwqNW75ldhdSrc) | 10 KB  |
-
-> next step is to load these fonts into your app , check below example if you are using expo .
-
-```jsx
-async function loadResourcesAsync() {
-  await Promise.all([
-    Font.loadAsync({
-      "azir-font": require("./assets/fonts/azir-font.ttf"),
-      "fa-solid-900": require("./assets/fonts/fa-solid-900.ttf"),
-      "fa-regular-400": require("./assets/fonts/fa-solid-900.ttf"),
-      "fa-brands-400": require("./assets/fonts/fa-brands-400.ttf"),
-      "custom-font-icon": require("./assets/fonts/custom-font-icon.ttf") // if you want to use Custom font. you can change the name of the font and the file as you want ( only for custom font icon)
-    })
-  ]);
-}
-```
-
-> if you want to use your custom font icons, you need to do one extra step to map your fonts icons and inject them to our Dictionary . which is an easy step .
-
-- Create new javascript file ( for example CustomIcons.js)
-
-- Export your icons object and make sure that you include in the first element : **\_fontFamily: "custom-font-icon"** the same name as you used in Font.loadAsync.
-
-- dont forget to add **\u** before each icon code. also icons name should be **camel case**.
-
-```jsx
-export default CustomIcons = {
-  _fontFamily: "custom-font-icon",
-  unHappy: "\uE802",
-  wink: "\uE813",
-  fireStation: "\uE817",
-  rss: "\uE800",
-  githubCircled: "\uE801",
-  sound: "\uE804",
-  jabber: "\uF317"
+```js
+const customTheme = {
+  SIZES: { BASE: 18, }
+  // this will overwrite the Azir SIZES BASE value 16
+  COLORS: { PRIMARY: 'red', }
+  // this will overwrite the Azir COLORS PRIMARY color #B23AFC
 };
+ <AzirProvider theme={customTheme}>
+  <YourComponent />
+</AzirProvider>
 ```
 
-### That's it!
+#### 2.1 withAzir in-depth usage and explanation
 
-**Examples**
+Exporting a React class/function using our withAzir function enables your component to consume Azir's React Context and pass down theme in your component as a prop or as an argument for `styles`. So now you can use our constant colors and sizes in your own components/screens.
 
-#### Font Awesome Icons :
-
-```jsx
-import Icon, { SolidIcons, RegularIcons, BrandIcons } from "azir-icon";
----
-<Icon icon={SolidIcons.appleAlt} color="#ff9900" style={ {
-    padding: 15, textShadowColor: "#ff0000",
-    textShadowOffset: { width: -1, height: -1 },
-    textShadowRadius: 2
-    } } />
-<Icon icon={RegularIcons.bellSlash} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={BrandIcons.amazonPay} color="success" size={100} shadow style={ { padding: 15 } } />
+```js
+const styles = theme =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: theme.COLORS.FACEBOOK
+    }
+  });
+export default withAzir(App, styles);
 ```
 
-<img src="https://i.imgur.com/eX6sk3B.jpg" alt="Basic" style="width:150px" />
+### 3. Theme COLORS & SIZES
 
-#### Custom Font icons :
+Use the following reference tables to create your own custom theme
 
-```jsx
-import Icon from "azir-icon";
-import CustomIcons from "./CustomIcons";//check above code of this object
----
-<Icon icon={CustomIcons.unHappy} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={CustomIcons.fireStation} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={CustomIcons.sound} style={ { padding: 15, fontSize: 30 } } />
-<Icon icon={CustomIcons.jabber} style={ { padding: 15, fontSize: 30 } } />
-```
+#### COLORS reference table
 
-<img src="https://i.imgur.com/qoXCiT8.jpg" alt="Basic" style="width:150px" />
+| **Color name** | **Default value**       | **Description**                                                                               |
+| :------------- | :---------------------- | :-------------------------------------------------------------------------------------------- |
+| **SOCIAL**     |
+| FACEBOOK       | #3B5998                 | ![](https://dummyimage.com/40x12/3B5998/000000.png&text=+) For social Facebook button         |
+| TWITTER        | #5BC0DE                 | ![](https://dummyimage.com/40x12/5BC0DE/000000.png&text=+) For social Twitter button          |
+| DRIBBBLE       | #EA4C89                 | ![](https://dummyimage.com/40x12/EA4C89/000000.png&text=+) For social Dribble button          |
+| **Azir**       |
+| THEME          | #B23AFC                 | ![](https://dummyimage.com/40x12/B23AFC/000000.png&text=+) Theme default color                |
+| PRIMARY        | #B23AFC                 | ![](https://dummyimage.com/40x12/B23AFC/000000.png&text=+) Primary color for Buttons          |
+| INFO           | #1232FF                 | ![](https://dummyimage.com/40x12/1232FF/000000.png&text=+) Info color for Buttons & Text      |
+| ERROR          | #FE2472                 | ![](https://dummyimage.com/40x12/FE2472/000000.png&text=+) Info color for error messages      |
+| WARNING        | #FF9C09                 | ![](https://dummyimage.com/40x12/FF9C09/000000.png&text=+) Warning color for warning messages |
+| SUCCESS        | #45DF31                 | ![](https://dummyimage.com/40x12/45DF31/000000.png&text=+) Success color for success messages |
+| **COMPONENTS** |
+| INPUT          | #808080                 | ![](https://dummyimage.com/40x12/808080/000000.png&text=+) Input backgroundColor              |
+| PLACEHOLDER    | #9FA5AA                 | ![](https://dummyimage.com/40x12/9FA5AA/000000.png&text=+) Input placeholder text color       |
+| NAVBAR         | #F9F9F9                 | ![](https://dummyimage.com/40x12/F9F9F9/000000.png&text=+) NavBar text color                  |
+| BLOCK          | #808080                 | ![](https://dummyimage.com/40x12/808080/000000.png&text=+) Block border color                 |
+| ICON           | #000000                 | ![](https://dummyimage.com/40x12/000000/000000.png&text=+) Icon default color                 |
+| **STANDARD**   |
+| WHITE          | #FFFFFF                 | ![](https://dummyimage.com/40x12/FFFFFF/000000.png&text=+) White color                        |
+| BLACK          | #000000                 | ![](https://dummyimage.com/40x12/000000/000000.png&text=+) Black color                        |
+| GREY           | #898989                 | ![](https://dummyimage.com/40x12/898989/000000.png&text=+) Grey color                         |
+| MUTED          | #9FA5AA                 | ![](https://dummyimage.com/40x12/9FA5AA/000000.png&text=+) Text muted color                   |
+| TRANSPARENT    | transparent             | Transparent value for Block, Button and other components                                      |
+| NEUTRAL        | rgba(255,255,255, 0.65) | Text neutral color white with 65% transparency                                                |
 
-### Props
+#### SIZES reference table
 
-- [`icon`](icon#icon)
-- [`color`](icon#color)
-- [`size`](icon#size)
-- [`shadow`](icon#shadow)
-- [`style`](icon#style)
+`const { height, width } = Dimensions.get('screen');`
+By default the size of **16** is used to calculate all the sizes
 
----
-
-# Reference
-
-### `icon`
-
-set the Icon using one of the fontawsome free icons set.
-
-| Type                                 | Required | Default          |
-| ------------------------------------ | -------- | ---------------- |
-| SolidIcons, RegularIcons, BrandIcons | YES      | SolidIcons.smile |
-
-### `color`
-
-color of the Icon
-
-| Type                                       | Required | Default |
-| ------------------------------------------ | -------- | ------- |
-| [azir-color](../../guides/color-reference) | No       | theme   |
-
-### `size`
-
-set the size of the icon , you can instead of using the size prop, you just override the style prop.
-
-| Type   | Required | Default                 |
-| ------ | -------- | ----------------------- |
-| Number | No       | BETheme.SIZES.ICON_SIZE |
-
-### `shadow`
-
-If true, show shadow effect for this component.
-
-| Type | Required | Default |
-| ---- | -------- | ------- |
-| bool | No       | false   |
-
-### `style`
-
-override Icon style,since we are using text to render icon then you can use all react native text props
-
-| Type  | Required |
-| ----- | -------- |
-| style | No       |
+| **Size name**          | **Default value** |
+| :--------------------- | :---------------: |
+| **THEME**              |
+| BASE                   |        16         |
+| FONT                   |        16         |
+| ICON                   |        16         |
+| OPACITY                |        0.8        |
+| BORDER_RADIUS          |         6         |
+| BORDER_WIDTH           |        0.8        |
+| **BUTTON**             |
+| BUTTON_WIDTH           |      16 \* 9      |
+| BUTTON_HEIGHT          |    16 \* 2.75     |
+| BUTTON_SHADOW_RADIUS   |        10         |
+| **BLOCK**              |
+| BLOCK_SHADOW_OPACITY   |       0.15        |
+| BLOCK_SHADOW_RADIUS    |         8         |
+| ANDROID_ELEVATION      |         1         |
+| **CARD**               |
+| CARD_BORDER_RADIUS     |     16 \* 0.4     |
+| CARD_BORDER_WIDTH      |    16 \* 0.05     |
+| CARD_WIDTH             | width - (16 \* 2) |
+| CARD_MARGIN_VERTICAL   |    16 \* 0.875    |
+| CARD_FOOTER_HORIZONTAL |    16 \* 0.75     |
+| CARD_FOOTER_VERTICAL   |    16 \* 0.75     |
+| CARD_AVATAR_WIDTH      |     16 \* 2.5     |
+| CARD_AVATAR_HEIGHT     |     16 \* 2.5     |
+| CARD_AVATAR_RADIUS     |    16 \* 1.25     |
+| CARD_IMAGE_HEIGHT      |    16 \* 12.5     |
+| CARD_ROUND             |   16 \* 0.1875    |
+| CARD_ROUNDED           |     16 \* 0.5     |
+| **INPUT**              |
+| INPUT_BORDER_RADIUS    |     16 \* 0.5     |
+| INPUT_BORDER_WIDTH     |    16 \* 0.05     |
+| INPUT_HEIGHT           |    16 \* 2.75     |
+| INPUT_HORIZONTAL       |        16         |
+| INPUT_TEXT             |    16 \* 0.875    |
+| INPUT_LABEL_TEXT       |     16 \* 0.9     |
+| INPUT_LABEL_BOTTOM     |      16 / 4       |
+| INPUT_HELP_TEXT        |     16 \* 0.8     |
+| INPUT_ROUNDED          |     16 \* 1.7     |
+| **NAVBAR**             |
+| NAVBAR_HEIGHT          |    16 \* 4.125    |
+| NAVBAR_VERTICAL        |        16         |
+| NAVBAR_TITLE_FLEX      |         2         |
+| NAVBAR_TITLE_HEIGHT    |  height \* 0.07   |
+| NAVBAR_TITLE_TEXT      |    16 \* 0.875    |
+| NAVBAR_LEFT_FLEX       |        0.5        |
+| NAVBAR_LEFT_HEIGHT     |  height \* 0.07   |
+| NAVBAR_LEFT_MARGIN     |        16         |
+| NAVBAR_RIGHT_FLEX      |        0.5        |
+| NAVBAR_RIGHT_HEIGHT    |  height \* 0.07   |
+| NAVBAR_RIGHT_MARGIN    |        16         |

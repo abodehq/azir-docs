@@ -94,7 +94,7 @@ Number of Text lines to be displayed.
 
 | Type   | Required | Default                       |
 | ------ | -------- | ----------------------------- |
-| number | No       | BETheme.SIZES.NUMBER_OF_LINES |
+| number | No       | AzirTheme.SIZES.NUMBER_OF_LINES |
 
 ### `viewMoreText`
 

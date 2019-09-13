@@ -262,7 +262,7 @@ border width of the button you can change border style using containerStyle prop
 
 | Type   | Required | Default                    |
 | ------ | -------- | -------------------------- |
-| Number | No       | BETheme.SIZES.BORDER_WIDTH |
+| Number | No       | AzirTheme.SIZES.BORDER_WIDTH |
 
 ### `radius`
 
@@ -270,7 +270,7 @@ Button border radius of the button to make it circle you need to set width = hei
 
 | Type   | Required | Default                     |
 | ------ | -------- | --------------------------- |
-| Number | No       | BETheme.SIZES.BORDER_RADIUS |
+| Number | No       | AzirTheme.SIZES.BORDER_RADIUS |
 
 ### `disabled`
 
@@ -302,7 +302,7 @@ Determines what the opacity of the Button should be when touch is active.
 
 | Type   | Required | Default               |
 | ------ | -------- | --------------------- |
-| Number | No       | BETheme.SIZES.OPACITY |
+| Number | No       | AzirTheme.SIZES.OPACITY |
 
 ### `loading`
 

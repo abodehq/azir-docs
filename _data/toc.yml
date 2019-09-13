@@ -2,8 +2,10 @@
   url: docs
   links:
     - title: "Get Started"
-      url: "docs/guides/color-reference"
+      url: "#"
       children:
+        - title: How to install
+          url: "docs/components/core/install"
         - title: Azir Theme
           url: "docs/components/core/theme"
     - title: "Components"
@@ -15,6 +17,8 @@
           url: "docs/components/core/text"
         - title: Text Typography
           url: "docs/components/core/texttypography"
+        - title: Input
+          url: "docs/components/core/input"
         - title: Button
           url: "docs/components/core/button"
         - title: Radio
