@@ -31,6 +31,8 @@
           url: "docs/components/core/checkboxgroup"
         - title: Switch
           url: "docs/components/core/switch"
+        - title: Hr
+          url: "docs/components/core/hr"
         - title: Flash Message
           url: "docs/components/core/flashmessage"
         - title: View More Text
