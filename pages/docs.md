@@ -32,6 +32,7 @@ permalink: /docs/
 - [react-native-fontawesome](https://www.npmjs.com/package/react-native-fontawesome)
 - [react-native-view-more-text](https://www.npmjs.com/package/react-native-view-more-text)
 - [react-native-flash-message](https://github.com/lucasferreira/react-native-flash-message)
+- [react-native-hr-component](https://www.npmjs.com/package/react-native-hr-component)
 
 ## Table of Contents
 
@@ -55,19 +56,19 @@ permalink: /docs/
 Use our awesome components inside your own projects by running:
 
 ```bash
-npm install galio-framework
+npm install azir-framework
 ```
 
 or
 
 ```sh
-yarn add galio-framework
+yarn add azir-framework
 ```
 
 Import our UI components to your screens:
 
 ```js
-import { Block, Button, Card, Icon, Input, NavBar, Text } from "galio-framework";
+import { Block, Button, Card, Icon, Input, NavBar, Text } from "azir-framework";
 ```
 
 ## Components
