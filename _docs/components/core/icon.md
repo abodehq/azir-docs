@@ -152,9 +152,9 @@ import CustomIcons from "./CustomIcons";//check above code of this object
 
 set the Icon using one of the fontawsome free icons set.
 
-| Type                                 | Required | Default          |
-| ------------------------------------ | -------- | ---------------- |
-| SolidIcons, RegularIcons, BrandIcons | YES      | SolidIcons.smile |
+| Type                                               | Required | Default          |
+| -------------------------------------------------- | -------- | ---------------- |
+| SolidIcons, RegularIcons, BrandIcons , CustomIcons | YES      | SolidIcons.smile |
 
 ### `color`
 
@@ -168,8 +168,8 @@ color of the Icon
 
 set the size of the icon , you can instead of using the size prop, you just override the style prop.
 
-| Type   | Required | Default                 |
-| ------ | -------- | ----------------------- |
+| Type   | Required | Default                   |
+| ------ | -------- | ------------------------- |
 | Number | No       | AzirTheme.SIZES.ICON_SIZE |
 
 ### `shadow`

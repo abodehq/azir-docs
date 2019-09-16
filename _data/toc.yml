@@ -33,6 +33,8 @@
           url: "docs/components/core/switch"
         - title: Hr
           url: "docs/components/core/hr"
+        - title: Avatar
+          url: "docs/components/core/avatar"
         - title: Flash Message
           url: "docs/components/core/flashmessage"
         - title: View More Text
