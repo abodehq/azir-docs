@@ -31,6 +31,8 @@
           url: "docs/components/core/checkboxgroup"
         - title: Switch
           url: "docs/components/core/switch"
+        - title: Slider
+          url: "docs/components/core/slider"
         - title: Hr
           url: "docs/components/core/hr"
         - title: Avatar

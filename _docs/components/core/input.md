@@ -153,6 +153,7 @@ import Icon, {SolidIcons} from "azir-icon";
 - [`renderPasswordIcon`](input#renderpasswordicon)
 - [`placeholderTextColor`](input#placeholdertextcolor)
 - [`color`](input#color)
+- [`selectionColor`](input#selectioncolor)
 - [`bgColor`](input#bgcolor)
 - [`label`](input#label)
 - [`labelPosition`](input#labelposition)
@@ -249,6 +250,14 @@ Sets the placeholder's text color
 ### `color`
 
 Input Text color
+
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
+| [azir-color](../../guides/color-reference) | No       | theme   |
+
+### `selectionColor`
+
+Input Text cursor color
 
 | Type                                       | Required | Default |
 | ------------------------------------------ | -------- | ------- |

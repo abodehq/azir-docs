@@ -4,7 +4,9 @@ title: Documentation
 permalink: /docs/
 ---
 
-# [Azir](https://www.azir.io) ![GitHub package.json version](https://img.shields.io/github/package-json/v/galio-org/galio.svg) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Galio,%20a%20free%20and%20beautiful%20UI%20framework%20https%3A//galio.io/%20%23reactnative%20%23react%20%23design%20%23developers%20%23freebie%20via%20%40galioframework)
+# [Azir](https://www.azir.io) ![GitHub package.json version](https://img.shields.io/github/package-json/v/galio-org/galio.svg)
+
+<!-- [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Galio,%20a%20free%20and%20beautiful%20UI%20framework%20https%3A//galio.io/%20%23reactnative%20%23react%20%23design%20%23developers%20%23freebie%20via%20%40galioframework) -->
 
 [![GitHub issues](https://img.shields.io/github/issues/abodehq/azir.svg?style=popout)](https://github.com/abodehq/azir/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/abodehq/azir.svg)](https://github.com/abodehq/azir/issues?q=is%3Aissue+is%3Aclosed)
@@ -13,9 +15,11 @@ permalink: /docs/
 <!-- [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/galio-org/galio.svg)](https://github.com/galio-org/galio/pulls?q=is%3Apr+is%3Aclosed) -->
 
 [![Gitter](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/azir-community)
-[![npm](https://img.shields.io/npm/dm/galio-framework.svg)](https://www.npmjs.com/package/galio-framework)
-[![Backers on Open Collective](https://opencollective.com/azir/backers/badge.svg)](#backers)
-[![Sponsors on Open Collective](https://opencollective.com/azir/sponsors/badge.svg)](#sponsors)
+
+<!-- [![npm](https://img.shields.io/npm/dm/galio-framework.svg)](https://www.npmjs.com/package/galio-framework) -->
+
+<!-- [![Backers on Open Collective](https://opencollective.com/azir/backers/badge.svg)](#backers)
+[![Sponsors on Open Collective](https://opencollective.com/azir/sponsors/badge.svg)](#sponsors) -->
 
 <p align="center">
   <img src="../assets/img/logomain.png">
@@ -28,6 +32,7 @@ permalink: /docs/
 ## Best Thanks to these Packages
 
 - [Galio KIT](https://github.com/galio-org/galio)
+- [react-native-elements](https://react-native-training.github.io/react-native-elements)
 - [react-native-typography](https://github.com/hectahertz/react-native-typography#readme)
 - [react-native-fontawesome](https://www.npmjs.com/package/react-native-fontawesome)
 - [react-native-view-more-text](https://www.npmjs.com/package/react-native-view-more-text)

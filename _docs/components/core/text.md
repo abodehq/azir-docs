@@ -115,9 +115,9 @@ align text to center .
 
 override text size Size, this will ovveride any premade font sizes like h1,h2 or even typography font size.
 
-| Type   | Required | Default |
-| ------ | -------- | ------- |
-| number | No       | Not set |
+| Type   | Required | Default              |
+| ------ | -------- | -------------------- |
+| number | No       | AzirTheme.SIZES.FONT |
 
 ### `style`
 

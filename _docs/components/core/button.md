@@ -220,16 +220,16 @@ override button container style for example if you want to change width,height,p
 
 Background color of the button
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
 | [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `textColor`
 
 Text color of the button ( only if the children is string)
 
-| Type                                     | Required | Default                                        |
-| ---------------------------------------- | -------- | ---------------------------------------------- |
+| Type                                       | Required | Default                                        |
+| ------------------------------------------ | -------- | ---------------------------------------------- |
 | [azir-color](../../guides/color-reference) | No       | white in default case, primary in outline mode |
 
 ### `textTransform`
@@ -252,24 +252,24 @@ override button text style for example if you want to change fontSize,... ( only
 
 border color of the button , will active if the borderWidth prop great than 0 or the button outline prop set to true
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
-| [azir-color](../../guides/color-reference) | No       | theme   |
+| Type                                       | Required | Default               |
+| ------------------------------------------ | -------- | --------------------- |
+| [azir-color](../../guides/color-reference) | No       | AzirTheme.COLORS.GREY |
 
 ### `borderWidth`
 
 border width of the button you can change border style using containerStyle prop
 
-| Type   | Required | Default                    |
-| ------ | -------- | -------------------------- |
+| Type   | Required | Default                      |
+| ------ | -------- | ---------------------------- |
 | Number | No       | AzirTheme.SIZES.BORDER_WIDTH |
 
 ### `radius`
 
 Button border radius of the button to make it circle you need to set width = height & radius = button width / 2
 
-| Type   | Required | Default                     |
-| ------ | -------- | --------------------------- |
+| Type   | Required | Default                       |
+| ------ | -------- | ----------------------------- |
 | Number | No       | AzirTheme.SIZES.BORDER_RADIUS |
 
 ### `disabled`
@@ -300,8 +300,8 @@ If true make an outline button,by set the default text color to primary set back
 
 Determines what the opacity of the Button should be when touch is active.
 
-| Type   | Required | Default               |
-| ------ | -------- | --------------------- |
+| Type   | Required | Default                 |
+| ------ | -------- | ----------------------- |
 | Number | No       | AzirTheme.SIZES.OPACITY |
 
 ### `loading`
@@ -316,8 +316,8 @@ If true we show react native activity indicator instead of the button content.
 
 set Loading indicator color , will active if loading prop set to true
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
 | [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `loadingSize`
@@ -332,8 +332,8 @@ Size of the indicator (default is 'small'). Passing a number to the size prop is
 
 Background color of the button when pressed , only if the button type is **TouchableHighlight**
 
-| Type                                     | Required | Default |
-| ---------------------------------------- | -------- | ------- |
+| Type                                       | Required | Default |
+| ------------------------------------------ | -------- | ------- |
 | [azir-color](../../guides/color-reference) | No       | theme   |
 
 ### `underlayStyle`

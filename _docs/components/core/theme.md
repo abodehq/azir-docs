@@ -5,31 +5,31 @@ description:
 
 # AzirTheme usage
 
-All the colors, sizes and layout rules are stored in our default theme. This can be found in the `theme` folder inside our library. Every component inherits its styling rules from that file. Imagine this... You're building an application and you have 30 buttons using the primary color but you feel like that color doesn't really suit your project. You can re-write our theme file with only the things you want to change by using our theme components and all Azir components will change the that certain style.
+All the colors, sizes and layout rules are stored in our default theme. Every component inherits its styling rules from this Package. Imagine this... You're building an application and you have 30 buttons using the primary color but you feel like that color doesn't really suit your project. You can re-write our theme file with only the things you want to change by using our theme components and all Azir components will change the that certain style.
 
 ### 1. Components
 
-- **AzirTheme**: default theme for components exporting an object with `{ COLORS, SIZES }`
+- **AzirTheme**: default theme for components exporting an object with `{ COLORS, SIZES }` the origion settings.
 - **withAzir**: HoC for any React-Native component with args: `Component` and optional `styles`. By using this, you can access constants we have in our default theme.
 - **AzirProvider**: React Context Provider getting **custom theme** from props and pass it to the React Context.
 
 ### 2. Usage
 
-- install the latest **Azir-framework** using `npm install Azir-framework` or `yarn add Azir-framework`
-- import { **theme, withAzir, AzirProvider** } from 'Azir-framework'
+- install any of our available components .
+- import { **theme, withAzir, AzirProvider** } from 'azir-theme'
 - export default **withAzir(YourComponent, componentStyles)**;
 - custom theme constants will **overwrite** the default Azir theme constants
 
 ```js
 const customTheme = {
-  SIZES: { BASE: 18, }
+  SIZES: { FONT: 120, BASE: 18, BORDER_RADIUS: 0, HR_PADDING: 0 },
   // this will overwrite the Azir SIZES BASE value 16
-  COLORS: { PRIMARY: 'red', }
+  COLORS: { THEME: "#ff9900" }
   // this will overwrite the Azir COLORS PRIMARY color #B23AFC
 };
- <AzirProvider theme={customTheme}>
-  <YourComponent />
-</AzirProvider>
+<AzirProvider theme={customTheme}>
+  <YourRootComponent />
+</AzirProvider>;
 ```
 
 #### 2.1 withAzir in-depth usage and explanation
@@ -44,7 +44,7 @@ const styles = theme =>
       backgroundColor: theme.COLORS.FACEBOOK
     }
   });
-export default withAzir(App, styles);
+export default withAzir(youComponent, styles);
 ```
 
 ### 3. Theme COLORS & SIZES
@@ -85,55 +85,18 @@ Use the following reference tables to create your own custom theme
 `const { height, width } = Dimensions.get('screen');`
 By default the size of **16** is used to calculate all the sizes
 
-| **Size name**          | **Default value** |
-| :--------------------- | :---------------: |
-| **THEME**              |
-| BASE                   |        16         |
-| FONT                   |        16         |
-| ICON                   |        16         |
-| OPACITY                |        0.8        |
-| BORDER_RADIUS          |         6         |
-| BORDER_WIDTH           |        0.8        |
-| **BUTTON**             |
-| BUTTON_WIDTH           |      16 \* 9      |
-| BUTTON_HEIGHT          |    16 \* 2.75     |
-| BUTTON_SHADOW_RADIUS   |        10         |
-| **BLOCK**              |
-| BLOCK_SHADOW_OPACITY   |       0.15        |
-| BLOCK_SHADOW_RADIUS    |         8         |
-| ANDROID_ELEVATION      |         1         |
-| **CARD**               |
-| CARD_BORDER_RADIUS     |     16 \* 0.4     |
-| CARD_BORDER_WIDTH      |    16 \* 0.05     |
-| CARD_WIDTH             | width - (16 \* 2) |
-| CARD_MARGIN_VERTICAL   |    16 \* 0.875    |
-| CARD_FOOTER_HORIZONTAL |    16 \* 0.75     |
-| CARD_FOOTER_VERTICAL   |    16 \* 0.75     |
-| CARD_AVATAR_WIDTH      |     16 \* 2.5     |
-| CARD_AVATAR_HEIGHT     |     16 \* 2.5     |
-| CARD_AVATAR_RADIUS     |    16 \* 1.25     |
-| CARD_IMAGE_HEIGHT      |    16 \* 12.5     |
-| CARD_ROUND             |   16 \* 0.1875    |
-| CARD_ROUNDED           |     16 \* 0.5     |
-| **INPUT**              |
-| INPUT_BORDER_RADIUS    |     16 \* 0.5     |
-| INPUT_BORDER_WIDTH     |    16 \* 0.05     |
-| INPUT_HEIGHT           |    16 \* 2.75     |
-| INPUT_HORIZONTAL       |        16         |
-| INPUT_TEXT             |    16 \* 0.875    |
-| INPUT_LABEL_TEXT       |     16 \* 0.9     |
-| INPUT_LABEL_BOTTOM     |      16 / 4       |
-| INPUT_HELP_TEXT        |     16 \* 0.8     |
-| INPUT_ROUNDED          |     16 \* 1.7     |
-| **NAVBAR**             |
-| NAVBAR_HEIGHT          |    16 \* 4.125    |
-| NAVBAR_VERTICAL        |        16         |
-| NAVBAR_TITLE_FLEX      |         2         |
-| NAVBAR_TITLE_HEIGHT    |  height \* 0.07   |
-| NAVBAR_TITLE_TEXT      |    16 \* 0.875    |
-| NAVBAR_LEFT_FLEX       |        0.5        |
-| NAVBAR_LEFT_HEIGHT     |  height \* 0.07   |
-| NAVBAR_LEFT_MARGIN     |        16         |
-| NAVBAR_RIGHT_FLEX      |        0.5        |
-| NAVBAR_RIGHT_HEIGHT    |  height \* 0.07   |
-| NAVBAR_RIGHT_MARGIN    |        16         |
+| **Size name**        | **Default value** |
+| :------------------- | :---------------: |
+| **THEME**            |
+| BASE                 |        16         |
+| FONT                 |        16         |
+| ICON                 |        16         |
+| OPACITY              |        0.8        |
+| BORDER_RADIUS        |         0         |
+| BORDER_WIDTH         |         0         |
+| **ICON**             |
+| ICON_SIZE            |      16 \* 9      |
+| **BUTTON**           |
+| BUTTON_WIDTH         |      16 \* 9      |
+| BUTTON_HEIGHT        |    16 \* 2.75     |
+| BUTTON_SHADOW_RADIUS |        10         |
