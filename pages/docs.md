@@ -38,6 +38,7 @@ permalink: /docs/
 - [react-native-view-more-text](https://www.npmjs.com/package/react-native-view-more-text)
 - [react-native-flash-message](https://github.com/lucasferreira/react-native-flash-message)
 - [react-native-hr-component](https://www.npmjs.com/package/react-native-hr-component)
+- [react-native-slider](https://github.com/jeanregisser/react-native-slider)
 
 ## Table of Contents
 

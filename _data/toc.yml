@@ -37,6 +37,8 @@
           url: "docs/components/core/hr"
         - title: Avatar
           url: "docs/components/core/avatar"
+        - title: Badge
+          url: "docs/components/core/badge"
         - title: Flash Message
           url: "docs/components/core/flashmessage"
         - title: View More Text
