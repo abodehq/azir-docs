@@ -62,19 +62,19 @@ permalink: /docs/
 Use our awesome components inside your own projects by running:
 
 ```bash
-npm install azir-framework
+npm install azir-core
 ```
 
 or
 
 ```sh
-yarn add azir-framework
+yarn add azir-core
 ```
 
 Import our UI components to your screens:
 
 ```js
-import { Block, Button, Card, Icon, Input, NavBar, Text } from "azir-framework";
+import { AzirTheme, Input, Hr, Icon, Avatar, Badge, Button, Text, CheckBox, CheckboxGroup, Radio, RadioGroup, ViewMoreText } from "azir-core";
 ```
 
 ## Components
