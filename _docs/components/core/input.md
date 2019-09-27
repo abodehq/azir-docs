@@ -145,6 +145,7 @@ import Icon, {SolidIcons} from "azir-icon";
 ### Props
 
 - [`type`](input#type)
+- [`inputRef`](input#inputref)
 - [`endIcon`](input#endicon)
 - [`endIconSize`](input#endiconsize)
 - [`endIconColor`](input#endiconcolor)
@@ -179,6 +180,22 @@ Determines which keyboard to open, e.g.numeric.
 | Type                                                                                                                                                                                                    | Required | Default |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------- |
 | enum('default', 'email-address', 'numeric', 'phone-pad', 'ascii-capable', 'numbers-and-punctuation', 'url', 'number-pad', 'name-phone-pad', 'decimal-pad', 'twitter', 'web-search', 'visible-password') | No       | default |
+
+### `inputRef`
+
+Access Input Ref Obj which will The returned object will persist for the full lifetime of the component..
+
+```jsx
+import React, { useRef } from "react";
+import Input from "azir-input";
+---
+const inputRef = useRef(null);
+<Input inputRef={inputRef} />
+```
+
+| Type           | Required | Default |
+| -------------- | -------- | ------- |
+| React.useRef() | No       | null    |
 
 ### `endIcon`
 
