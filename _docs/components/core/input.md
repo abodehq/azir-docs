@@ -299,7 +299,7 @@ Input Text color
 
 | Type                                       | Required | Default |
 | ------------------------------------------ | -------- | ------- |
-| [azir-color](../../guides/color-reference) | No       | theme   |
+| [azir-color](../../guides/color-reference) | No       | black   |
 
 ### `selectionColor`
 
