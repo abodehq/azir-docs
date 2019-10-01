@@ -6,7 +6,7 @@ permalink: /docs/
 
 # [Azir Framework](https://www.azir.io)
 
-> Please dont install azir-core, we recommend you to install whatever component you need into your app, if you want to install the core compoenet please check this [`Example`](#installation)
+> Please dont install azir-core, we recommend you to install whatever component you need into your app, if you want to install the core components please check this [`Example`](#installation)
 
  <!-- ![GitHub package.json version](https://img.shields.io/github/package-json/v/galio-org/galio.svg) -->
 
