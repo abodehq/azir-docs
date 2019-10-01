@@ -6,6 +6,8 @@ permalink: /docs/
 
 # [Azir Framework](https://www.azir.io)
 
+> Please dont install azir-core, we recommend you to install whatever component you need into your app, if you want to install the core compoenet please check this [`Example`](#installation)
+
  <!-- ![GitHub package.json version](https://img.shields.io/github/package-json/v/galio-org/galio.svg) -->
 
 <!-- [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Galio,%20a%20free%20and%20beautiful%20UI%20framework%20https%3A//galio.io/%20%23reactnative%20%23react%20%23design%20%23developers%20%23freebie%20via%20%40galioframework) -->
@@ -24,7 +26,7 @@ permalink: /docs/
 [![Sponsors on Open Collective](https://opencollective.com/azir/sponsors/badge.svg)](#sponsors) -->
 
 <p align="center">
-  <img src="../assets/img/logomain.png">
+  <img src="https://azir.io/assets/img/logomain.png">
   <p align="center">Azir is one of the coolest React Native libraries you could ever use, licensed under MIT. Carefully crafted by developers for developers. Ready-made components, typography, and a gorgeous base theme that is easily adaptable to each project.</p>
     <p align="center">The Idea Behind Azir Framework is to Collect and Refactor popular react native open source modules in One Place Under One theme and also to avoid multiple dependencies and out of dated packages.  </p>
 </p>
@@ -62,6 +64,8 @@ permalink: /docs/
 #### SDK library instructions
 
 Azir Goal is to give users the ability to download their favourite components when they need. you can directly download the core ui components you may always need in your app:
+
+### installation
 
 ```bash
 npm install azir-theme azir-icon azir-text azir-input azir-button azir-radio azir-avatar azir-badge azir-hr --save
