@@ -43,6 +43,8 @@
           url: "docs/components/core/flashmessage"
         - title: View More Text
           url: "docs/components/core/viewmoretext"
+        - title: Search
+          url: "docs/components/core/search"
         # - title: Quizzes1
         # url: "docs/extras/example-quiz"
     - title: "GUIDES"

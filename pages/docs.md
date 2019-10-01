@@ -4,7 +4,9 @@ title: Documentation
 permalink: /docs/
 ---
 
-# [Azir](https://www.azir.io) ![GitHub package.json version](https://img.shields.io/github/package-json/v/galio-org/galio.svg)
+# [Azir Framework](https://www.azir.io)
+
+ <!-- ![GitHub package.json version](https://img.shields.io/github/package-json/v/galio-org/galio.svg) -->
 
 <!-- [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Galio,%20a%20free%20and%20beautiful%20UI%20framework%20https%3A//galio.io/%20%23reactnative%20%23react%20%23design%20%23developers%20%23freebie%20via%20%40galioframework) -->
 
@@ -59,22 +61,22 @@ permalink: /docs/
 
 #### SDK library instructions
 
-Use our awesome components inside your own projects by running:
+Azir Goal is to give users the ability to download their favourite components when they need. you can directly download the core ui components you may always need in your app:
 
 ```bash
-npm install azir-core
+npm install azir-theme azir-icon azir-text azir-input azir-button azir-radio azir-avatar azir-badge azir-hr --save
 ```
 
 or
 
 ```sh
-yarn add azir-core
+yarn add aazir-theme azir-icon azir-text azir-input azir-button azir-radio azir-avatar azir-badge azir-hr
 ```
 
-Import our UI components to your screens:
+Import our UI component to your screens:
 
 ```js
-import { AzirTheme, Input, Hr, Icon, Avatar, Badge, Button, Text, CheckBox, CheckboxGroup, Radio, RadioGroup, ViewMoreText } from "azir-core";
+import Input from "azir-input";
 ```
 
 ## Components
@@ -84,12 +86,17 @@ import { AzirTheme, Input, Hr, Icon, Avatar, Badge, Button, Text, CheckBox, Chec
 - Button
 - Text
 - Text Typography
+- Input
 - Radio
 - Radio Group
 - Checkbox
 - Checkbox Group
 - Switch
 - View More Text
+- Hr
+- Avatar
+- Badge
+- Slider
 - Flash Message
 
 ## Documentation
