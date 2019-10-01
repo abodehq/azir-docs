@@ -74,7 +74,7 @@ npm install azir-theme azir-icon azir-text azir-input azir-button azir-radio azi
 or
 
 ```sh
-yarn add aazir-theme azir-icon azir-text azir-input azir-button azir-radio azir-avatar azir-badge azir-hr
+yarn add azir-theme azir-icon azir-text azir-input azir-button azir-radio azir-avatar azir-badge azir-hr
 ```
 
 Import our UI component to your screens:
