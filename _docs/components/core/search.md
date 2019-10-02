@@ -94,7 +94,7 @@ const [txt, setTxt] = useState("");
 />
 ```
 
-<img src="https://i.imgur.com/J3vQxtj.jpg" alt="Basic" style="width:250px" />
+<img src="https://i.imgur.com/t77dZy3.jpg" alt="Basic" style="width:250px" />
 
 ### Props
 

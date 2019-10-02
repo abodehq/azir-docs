@@ -45,6 +45,8 @@
           url: "docs/components/core/viewmoretext"
         - title: Search
           url: "docs/components/core/search"
+        - title: Rating
+          url: "docs/components/core/rating"
         # - title: Quizzes1
         # url: "docs/extras/example-quiz"
     - title: "GUIDES"
