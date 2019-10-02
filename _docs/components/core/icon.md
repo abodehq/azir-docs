@@ -59,7 +59,7 @@ Font Awesome Icons provide also three types of free icons set . you can download
 
 | Type                     | Font Name(Required) | Download                                                       | Size   |
 | ------------------------ | ------------------- | -------------------------------------------------------------- | ------ |
-| AzirIcons (**REQUIRED**) | azir-font           | [azir-font](https://azir.io/fonts/azir-font.ttf)               | 14 KB  |
+| AzirIcons (**REQUIRED**) | azir-font           | [azir-font](https://azir.io/fonts/azir-font.ttf)               | 17 KB  |
 | RegularIcons             | fa-regular-400      | [fa-regular-400](https://azir.io/fonts/fa-regular-400.ttf)     | 34 KB  |
 | SolidIcons               | fa-solid-900        | [fa-solid-900](https://azir.io/fonts/fa-solid-900.ttf)         | 188 KB |
 | BrandIcons               | fa-brands-400       | [fa-brands-400](https://azir.io/fonts/fa-brands-400.ttf)       | 127KB  |
