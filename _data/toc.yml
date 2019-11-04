@@ -21,6 +21,8 @@
           url: "docs/components/core/input"
         - title: Button
           url: "docs/components/core/button"
+        - title: Grid
+          url: "docs/components/core/grid"
         - title: Radio
           url: "docs/components/core/radio"
         - title: Radio Group
